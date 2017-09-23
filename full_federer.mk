@@ -22,10 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/huawei/federer/device.mk)
 
 # Device identifier. This must come after all inclusions
-
-PRODUCT_NAME := full_federer
-BOARD_VENDOR := HUAWEI
-PRODUCT_MODEL := FDR-A01L
-PRODUCT_BRAND := HUAWEI
 PRODUCT_DEVICE := federer
+PRODUCT_NAME := full_federer
+PRODUCT_BRAND := HUAWEI
+PRODUCT_MODEL := FDR-A01L
 PRODUCT_MANUFACTURER := HUAWEI
+BOARD_VENDOR := HUAWEI
