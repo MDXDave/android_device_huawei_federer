@@ -106,7 +106,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8916 \
+    camera.msm8939 \
     libmm-qcamera
 
 # Charger
