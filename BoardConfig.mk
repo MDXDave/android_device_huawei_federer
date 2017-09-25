@@ -276,4 +276,4 @@ WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/wlan.ko"
 WIFI_DRIVER_MODULE_NAME := "wlan"
 
 # inherit from the proprietary version
--include vendor/huawei/federer/BoardConfigVendor.mk
+-include vendor/huawei/msm8916-common/BoardConfigVendor.mk
