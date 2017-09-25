@@ -73,8 +73,8 @@ TARGET_USES_UNCOMPRESSED_KERNEL := true
 #TARGET_KERNEL_ARCH := arm
 #endif
 #TARGET_KERNEL_SOURCE := kernel/huawei/federer2
-TARGET_KERNEL_SOURCE := kernel/huawei/t2-common
-TARGET_KERNEL_CONFIG := msm-t2_defconfig
+TARGET_KERNEL_SOURCE := kernel/huawei/federer
+TARGET_KERNEL_CONFIG := msm_defconfig
 
 #custom booting
 BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
@@ -253,19 +253,6 @@ include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
     device/huawei/federer/sepolicy
-
-BOARD_SEPOLICY_UNION += \
-    bluetooth_loader.te \
-    file_contexts \
-    healthd.te \
-    init.te \
-    libqmi_oem_main.te \
-    mm-qcamerad.te \
-    perfd.te \
-    qseecomd.te \
-    rmt_storage.te \
-    system.te \
-    time_daemon.te
 
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
